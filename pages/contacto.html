@@ -32,25 +32,64 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
-  <body>
+  <body class="bg-danger-subtle">
     <header class="header">
       <div class="logo">
         <img src="../assets/FotoCV.jpg" alt="logo personal" />
-        <h2>Mercedes Flores Levalle</h2>
+        <h1>Mercedes Flores Levalle</h1>
       </div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="../index.html">HOME</a></li>
-          <li><a href="./sobremi.html">SOBRE MI</a></li>
-          <li><a href="./cinetico.html">CINETICO</a></li>
-          <li><a href="./animacion.html">ANIMACION 2D</a></li>
-          <li><a href="./contacto.html">CONTACTO</a></li>
-        </ul>
+     <nav class="navbar navbar-expand-lg" style="background-color: #dc597f">
+        <div class="container-fluid">
+          <!-- Botón hamburguesa -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Enlaces -->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav nav-links">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./sobremi.html"
+                  >SOBRE MI</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./cinetico.html"
+                  >CINETICO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./animacion.html"
+                  >ANIMACION 2D</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./contacto.html"
+                  >CONTACTO</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
       <div>
-        <h1>CONTACTO</h1>
+        <h1 class="TitulosPaginas">CONTACTO</h1>
         <p>
           Si te gustaría contactarme, colaborar en algún proyecto o simplemente
           decir hola, podés completar el formulario y te responderé lo antes
