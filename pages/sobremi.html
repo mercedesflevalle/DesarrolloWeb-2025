@@ -108,37 +108,59 @@
         </p>
       </div>
       <!-- Sección de Formacion -->
-      <section class="formacion">
-        <h2>Formación Académica</h2>
-        <div class="formacion-item">
-          <h3 class="fw-bold">Universidad Argentina de la Empresa</h3>
-          <p>Licenciatura en Diseño multimedia y de interacción</p>
-          <p>2023 - Presente</p>
-        </div>
-
-        <div class="formacion-item">
-          <h3 class="fw-bold">CoderHouse</h3>
-          <p>Desarrollo Web</p>
-          <p>2022 - 2023</p>
-        </div>
-
-        <div class="formacion-item">
-          <h3 class="fw-bold">St Margarets School</h3>
-          <p>Bachiller Internacional Bilingüe</p>
-          <p>2017 - 2021</p>
+      <section>
+        <div class="grid">
+          <h2>Formacion Academica</h2>
+          <!-- FILA 1 -->
+          <div class="ContenidoFormacion">
+            <h3 class="fw-bold">Universidad Argentina de la Empresa</h3>
+            <p>Licenciatura en Diseño multimedia y de interacción</p>
+            <p>2023 - Presente</p>
+          </div>
+          <div class="ImagenFormacion"><img src="../assets/UADE.jpg" alt="UADE" /></div>
+          <!-- FILA 2 -->
+          <div class="ContenidoFormacion">
+            <h3 class="fw-bold">CoderHouse</h3>
+            <p>Desarrollo Web</p>
+            <p>2022 - 2023</p>
+          </div>
+          <div class="ImagenFormacion"><img src="../assets/CoderHouse.png" alt="Logo Coder" /></div>
+          <!-- FILA 3 -->
+          <div class="ContenidoFormacion">
+            <h3 class="fw-bold">St Margarets School</h3>
+            <p>Bachiller Internacional Bilingüe</p>
+            <p>2017 - 2021</p>
+          </div>
+          <div class="ImagenFormacion"><img src="../assets/Margarets.png" alt="St Margarets School" /></div>
         </div>
       </section>
 
       <!-- Sección de Programas de Adobe -->
       <section class="programas">
         <h2>Programas de Adobe Creative Cloud</h2>
-        <div class="carrusel-logos">
-          <img src="img/photoshop.png" alt="Photoshop" />
-          <img src="img/illustrator.png" alt="Illustrator" />
-          <img src="img/aftereffects.png" alt="After Effects" />
-          <img src="img/photoshop.png" alt="InDesign" />
-          <img src="img/illustrator.png" alt="Lightroom" />
-          <img src="img/aftereffects.png" alt="PremierePro" />
+        <div class="carrousel_logos">
+        <div class="logos">
+          <img src="../assets/LogoPhotoshop.png" alt="Photoshop" />
+          <img src="../assets/LogoIllustrator.png" alt="Illustrator" />
+          <img src="../assets/LogoAfterEffects.png" alt="After Effects" />
+          <img src="../assets/LogoInDesign.png" alt="InDesign" />
+          <img src="../assets/LogoLightroom.png" alt="Lightroom" />
+          <img src="../assets/LogoPremiere.png" alt="PremierePro" />
+          <!-- DUPLICADOS PARA LOOP CONTINUO -->
+            <img src="../assets/LogoPhotoshop.png" alt="Photoshop" />
+          <img src="../assets/LogoIllustrator.png" alt="Illustrator" />
+          <img src="../assets/LogoAfterEffects.png" alt="After Effects" />
+          <img src="../assets/LogoInDesign.png" alt="InDesign" />
+          <img src="../assets/LogoLightroom.png" alt="Lightroom" />
+          <img src="../assets/LogoPremiere.png" alt="PremierePro" />
+          <!-- TRIPLICADOS PARA LOOP CONTINUO -->
+            <img src="../assets/LogoPhotoshop.png" alt="Photoshop" />
+          <img src="../assets/LogoIllustrator.png" alt="Illustrator" />
+          <img src="../assets/LogoAfterEffects.png" alt="After Effects" />
+          <img src="../assets/LogoInDesign.png" alt="InDesign" />
+          <img src="../assets/LogoLightroom.png" alt="Lightroom" />
+          <img src="../assets/LogoPremiere.png" alt="PremierePro" />
+        </div>
         </div>
       </section>
 
@@ -151,7 +173,9 @@
           <li>Trabajo en equipo</li>
           <li>Creatividad</li>
         </ul>
-        <a href="./contacto.html" class="">CONTACTO</a>
+        <div class="text-center mb-3">
+        <a href="./contacto.html" class="boton-proyectosYcontacto">CONTACTO</a>
+        </div>
       </section>
     </main>
     <footer class="footer">
