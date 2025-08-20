@@ -8,13 +8,13 @@
 body {
   background-color: #f8d7da;
   color: #000000;
-  font-family: "Montserrat", sans-serif;
+  
 }
 
 h1 {
-  font-family: "Bebas Neue", sans-serif;
+  /* font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: normal; */
 }
 
 .TitulosPaginas {
@@ -151,7 +151,6 @@ a {
   row-gap: 28px;
   align-items: start;
   max-width: 1080px;
-  margin: 0 auto;
 }
 
 .grid h2 {
@@ -202,7 +201,7 @@ a {
   } /* 3 copias */
 }
 
-/* CINETICO */
+/* CINETICO Y ANIMACION*/
 
 .cinetico__intro {
   text-align: center;
@@ -214,10 +213,28 @@ a {
   border-radius: 10px;
   margin: 20px 0 20px;
 }
+.logo_herramientas {
+  width: 60px;
+}
 
-/* MEDIA QUERIE PAGINA SOBRE MI */
+.linea-estetica {
+  border: none;
+  height: 2px;              
+  background-color: #f098d7;   
+  width: 100%;                
+}
+/* MEDIA QUERIE PAGINA CINETICO */
+
+@media (max-width: 990px) {
+  .video {
+    max-width: 500px;
+  }
+}
 
 @media (max-width: 768px) {
+  .video {
+    max-width: 400px;
+  }
   .sobremi__intro {
     flex-wrap: wrap;
   }
@@ -232,23 +249,8 @@ a {
   }
 }
 
-/* MEDIA QUERIE PAGINA CINETICO */
-
-@media (max-width: 990px) {
-  .video {
-    max-width: 500px;
-  }
-}
-
-@media (max-width: 768px) {
-  .video {
-    max-width: 400px;
-  }
-}
-
 @media (max-width: 530px) {
   .video {
     max-width: 200px;
   }
 }
-
