@@ -14,7 +14,7 @@
       crossorigin="anonymous"
     />
     <!-- LINK GOOGLE FONTS -->
-    
+
     <!-- LINK PARA LOGOS DEL FOOTER -->
     <link
       rel="stylesheet"
@@ -27,7 +27,7 @@
         <img src="../assets/FotoCV.jpg" alt="logo personal" />
         <h1>Mercedes Flores Levalle</h1>
       </div>
-     <nav class="navbar navbar-expand-lg" style="background-color: #dc597f">
+      <nav class="navbar navbar-expand-lg" style="background-color: #dc597f">
         <div class="container-fluid">
           <!-- Botón hamburguesa -->
           <button
@@ -76,35 +76,54 @@
         </div>
       </nav>
     </header>
-    <main>
-      <div>
-        <h1 class="TitulosPaginas">CONTACTO</h1>
-        <p>
-          Si te gustaría contactarme, colaborar en algún proyecto o simplemente
-          decir hola, podés completar el formulario y te responderé lo antes
-          posible. ¡Estoy abierta a nuevas oportunidades y desafíos!
-        </p>
+    <main class="contacto container my-5">
+      <div
+        class="p-5 rounded shadow"
+        style="background-color: #ffe6ee"
+      >
+        <div class="contacto__intro">
+          <h1 class="TitulosPaginas">CONTACTO</h1>
+          <p class="text-center">
+            Si te gustaría contactarme, colaborar en algún proyecto o
+            simplemente decir hola, podés completar el formulario y te
+            responderé lo antes posible. <br />
+            ¡Estoy abierta a nuevas oportunidades y desafíos!
+          </p>
+        </div>
+        <section class="contact-form">
+            <form action="#" method="post" class="contact-form__grid">
+              <div class="form-field">
+                <label for="nombre" >Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required/>
+              </div>
+              <div class="form-field">
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="correo" placeholder="tunombre@email.com" autocomplete="email" required />
+              </div>
+              <div class="form-field">
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+54 9 11 1234-5678" autocomplete="tel" required />
+              </div>
+              <div class="form-field">
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" name="asunto"  placeholder="Motivo del mensaje" required/>
+              </div>
+              <div class="form-field form-field__full">
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                  name="mensaje"
+                  id="mensaje"
+                  rows="6"
+                  placeholder="Escribí tu mensaje"
+                  required
+                ></textarea>
+              </div>
+              <div>
+                <button class="contact-form__boton" type="submit">ENVIAR</button>
+              </div>
+            </form>
+        </section>
       </div>
-      <section>
-        <form action="#" method="post">
-          <label for="nombre">Nombre</label>
-          <input type="text" name="nombre" required />
-
-          <label for="correo">Correo electrónico</label>
-          <input type="email" name="correo" required />
-
-          <label for="telefono">Teléfono</label>
-          <input type="tel" name="telefono" required />
-
-          <label for="asunto">Asunto</label>
-          <input type="text" name="asunto" required />
-
-          <label for="mensaje">Mensaje</label>
-          <textarea name="mensaje" rows="5" required></textarea>
-
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
     </main>
     <footer class="footer">
       <div class="redes">
