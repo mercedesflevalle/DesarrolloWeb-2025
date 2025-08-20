@@ -10,13 +10,19 @@ body {
   color: #000000;
 }
 
-/* h1 {
-  font-family: "Bebas Neue", sans-serif;
+h2,
+h3 {
+  font-family: "Fraunces", serif;
   font-weight: 400;
   font-style: normal;
-} */
+}
+
+p {
+  font-family: "Manrope", sans-serif;
+}
 
 .TitulosPaginas {
+  font-family: "Fraunces", serif;
   margin-top: 12px;
   text-align: center;
 }
@@ -250,6 +256,7 @@ a {
   color: #de5d83;
   font-weight: 500;
   margin-bottom: 5px;
+  font-family: "Fraunces", serif;
 }
 
 .contact-form input,
@@ -260,6 +267,7 @@ a {
   border-radius: 10px;
   font: inherit;
   background: #ffffff;
+  font-family: "Fraunces", serif;
 }
 
 .contact-form input:required:invalid,

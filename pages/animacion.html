@@ -1,182 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animacion 2D</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css" />
-    <!-- LINK BOOTSTRAP -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
-    <!-- LINK GOOGLE FONTS -->
-   
-    <!-- LINK PARA LOGOS DEL FOOTER -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-  </head>
-  <body class="bg-danger-subtle">
-    <header class="header sticky-top">
-      <div class="logo">
-        <img src="../assets/FotoCV.jpg" alt="logo personal" />
-        <h1>Mercedes Flores Levalle</h1>
-      </div>
-      <nav class="navbar navbar-expand-lg" style="background-color: #dc597f">
-        <div class="container-fluid">
-          <!-- Botón hamburguesa -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <!-- Enlaces -->
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav nav-links">
-              <li class="nav-item">
-                <a class="nav-link text-white" href="../index.html">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="./sobremi.html"
-                  >SOBRE MI</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="./cinetico.html"
-                  >CINETICO</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="./animacion.html"
-                  >ANIMACION 2D</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="./contacto.html"
-                  >CONTACTO</a
-                >
-              </li>
-            </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animacion 2D</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <!-- LINK BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <!-- LINK GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+  <!-- LINK PARA LOGOS DEL FOOTER -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body class="bg-danger-subtle">
+  <header class="header sticky-top">
+    <div class="logo">
+      <img src="../assets/FotoCV.jpg" alt="logo personal" />
+      <h1>Mercedes Flores Levalle</h1>
+    </div>
+    <nav class="navbar navbar-expand-lg" style="background-color: #dc597f">
+      <div class="container-fluid">
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Enlaces -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav nav-links">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./sobremi.html">SOBRE MI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./cinetico.html">CINETICO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./animacion.html">ANIMACION 2D</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container my-5">
+    <div class="p-5 rounded shadow" style="background-color: #ffe6ee">
+      <div class="intro-animacion">
+        <h1 class="TitulosPaginas">ANIMACION 2D</h1>
+        <p class="text-center">
+          En esta sección te muestro algunos de mis trabajos de animación 2D
+          realizados durante mi formación. Cada proyecto refleja mi interés
+          por contar historias a través del movimiento, combinando técnica,
+          estética y creatividad. Desde rotoscopias hasta motion graphics,
+          cada pieza tiene su propia personalidad y proceso.
+        </p>
+      </div>
+      <section class="proyectos-animacion">
+        <div class="proyecto">
+          <div class="contenido-texto">
+            <hr class="linea-estetica">
+            <h2 class="my-3">Trabajo Práctico: Rotoscopía</h2>
+            <h3>¿En qué consistió?</h3>
+            <p>
+              La rotoscopía es una técnica de animación que consiste en dibujar sobre un video real cuadro por cuadro,
+              logrando una animación fluida con base en el movimiento original. Tuvimos que elegir una cancion y de esa,
+              se nos asigno 4 segundos de video a cada uno.
+            </p>
+            <h3>¿Con qué herramienta se llevó a cabo?</h3>
+            <img src="../assets/LogoPhotoshop.png" alt="logo photoshop" class="logo_herramientas">
+            <h3>Video original</h3>
+            <video src="../assets/RotoscopiaCRUDO.mp4" class="video" controls></video>
+            <h3>Video con Rotoscopia</h3>
+            <video src="../assets/RotoscopiaFINAL.mp4" class="video" controls></video>
           </div>
         </div>
-      </nav>
-    </header>
-    <main class="container my-5">
-      <div
-        class="p-5 rounded shadow"
-        style="background-color: #ffe6ee"
-      >
-        <div class="intro-animacion">
-          <h1 class="TitulosPaginas">ANIMACION 2D</h1>
-          <p class="text-center">
-            En esta sección te muestro algunos de mis trabajos de animación 2D
-            realizados durante mi formación. Cada proyecto refleja mi interés
-            por contar historias a través del movimiento, combinando técnica,
-            estética y creatividad. Desde rotoscopias hasta motion graphics,
-            cada pieza tiene su propia personalidad y proceso.
-          </p>
+        <hr class="linea-estetica">
+        <div class="proyecto">
+          <div class="contenido-texto">
+            <h2 class="my-3">Trabajo Práctico: Stop Motion</h2>
+            <h3>¿En qué consistió?</h3>
+            <p>
+              El stop motion es una técnica de animación fotograma a fotograma. En este trabajo hicimos una publicidad
+              animada de una marca real utilizando objetos físicos.
+            </p>
+            <h3>¿Con qué herramienta se llevó a cabo?</h3>
+            <p>Fotografía cuadro a cuadro con plastilina y papel + edición.</p>
+            <h3>Video final</h3>
+            <video src="../assets/StopMotion.mp4" class="video" controls></video>
+          </div>
         </div>
-        <section class="proyectos-animacion">
-          <div class="proyecto">
-            <div class="contenido-texto">
-              <hr class="linea-estetica">
-              <h2 class="my-3">Trabajo Práctico: Rotoscopía</h2>
-              <h3>¿En qué consistió?</h3>
-              <p>
-                La rotoscopía es una técnica de animación que consiste en dibujar sobre un video real cuadro por cuadro, logrando una animación fluida con base en el movimiento original. Tuvimos que elegir una cancion y de esa, se nos asigno 4 segundos de video a cada uno.
-              </p>
-              <h3>¿Con qué herramienta se llevó a cabo?</h3>
-              <img src="../assets/LogoPhotoshop.png" alt="logo photoshop" class="logo_herramientas">
-              <h3>Video original</h3>
-              <video src="../assets/RotoscopiaCRUDO.mp4" class="video" controls></video>
-              <h3>Video con Rotoscopia</h3>
-              <video src="../assets/RotoscopiaFINAL.mp4" class="video" controls></video>
-            </div>
+        <hr class="linea-estetica">
+        <div class="proyecto">
+          <div class="contenido-texto">
+            <h2 class="my-3">Trabajo Práctico: Motion Graphics</h2>
+            <h3>¿En qué consistió?</h3>
+            <p>
+              En este proyecto creamos una pieza de animación digital basada en tipografía, gráficos y efectos de
+              movimiento para mostar los creditos de una pelicula. En este caso, yo elegi Monsterc INC.
+            </p>
+            <h3>¿Con qué herramienta se llevó a cabo?</h3>
+            <img src="../assets/LogoAfterEffects.png" alt="logo affter effects" class="logo_herramientas">
+            <h3>Video final</h3>
+            <video src="../assets/MotionGraphics.mp4" class="video" controls></video>
           </div>
-<hr class="linea-estetica">
-          <div class="proyecto">
-            <div class="contenido-texto">
-              <h2 class="my-3">Trabajo Práctico: Stop Motion</h2>
-              <h3>¿En qué consistió?</h3>
-              <p>
-              El stop motion es una técnica de animación fotograma a fotograma. En este trabajo hicimos una publicidad animada de una marca real utilizando objetos físicos.
-              </p>
-              <h3>¿Con qué herramienta se llevó a cabo?</h3>
-              <p>Fotografía cuadro a cuadro con plastilina y papel + edición.</p>
-              <h3>Video final</h3>
-              <video src="../assets/StopMotion.mp4" class="video" controls></video>
-            </div>
+        </div>
+        <hr class="linea-estetica">
+        <div class="proyecto">
+          <div class="contenido-texto">
+            <h2 class="my-3">Trabajo Práctico: FlipBook</h2>
+            <h3>¿En qué consistió?</h3>
+            <p>
+              El flipbook, también conocido como folioscopio, es una técnica de animación tradicional en la que se
+              dibujan imágenes secuenciales en las páginas de un cuadernillo o bloc. Al pasar rápidamente las hojas con
+              el dedo pulgar, las imágenes parecen moverse, generando la ilusión de animación. La idea era libre, asi
+              que invente la historia de un pez que va nadando por el oceano hasta que encuentra un poco de comida. Al
+              morder el trozo de comida, es pescado por un pescador que andaba por el oceano y muere. </p>
+            <h3>¿Con qué herramienta se llevó a cabo?</h3>
+            <p>100% a mano con tecnica libre y utilizando block de hojas A6. En mi caso, utilice fibras y laices de
+              colores. Luego, una vez finalizado los dibujos que en total fueron 107 papelitos, le tuve que agregar una
+              banda sonora desde after effects.</p>
+            <h3>Video final</h3>
+            <video src="../assets/FlipBook.mp4" class="video" controls></video>
           </div>
-<hr class="linea-estetica">
-          <div class="proyecto">
-            <div class="contenido-texto">
-              <h2 class="my-3">Trabajo Práctico: Motion Graphics</h2>
-              <h3>¿En qué consistió?</h3>
-              <p>
-                En este proyecto creamos una pieza de animación digital basada en tipografía, gráficos y efectos de movimiento para mostar los creditos de una pelicula. En este caso, yo elegi Monsterc INC.
-              </p>
-              <h3>¿Con qué herramienta se llevó a cabo?</h3>
-              <img src="../assets/LogoAfterEffects.png" alt="logo affter effects" class="logo_herramientas">
-              <h3>Video final</h3>
-              <video src="../assets/MotionGraphics.mp4" class="video" controls></video>
-            </div>
-          </div>
-<hr class="linea-estetica">
-          <div class="proyecto">
-            <div class="contenido-texto">
-              <h2 class="my-3">Trabajo Práctico: FlipBook</h2>
-              <h3>¿En qué consistió?</h3>
-              <p>
-              El flipbook, también conocido como folioscopio, es una técnica de animación tradicional en la que se dibujan imágenes secuenciales en las páginas de un cuadernillo o bloc. Al pasar rápidamente las hojas con el dedo pulgar, las imágenes parecen moverse, generando la ilusión de animación. La idea era libre, asi que invente la historia de un pez que va nadando por el oceano hasta que encuentra un poco de comida. Al morder el trozo de comida, es pescado por un pescador que andaba por el oceano y muere.              </p>
-              <h3>¿Con qué herramienta se llevó a cabo?</h3>
-              <p>100% a mano con tecnica libre y utilizando block de hojas A6. En mi caso, utilice fibras y laices de colores. Luego, una vez finalizado los dibujos que en total fueron 107 papelitos, le tuve que agregar una banda sonora desde after effects.</p>
-              <h3>Video final</h3>
-              <video src="../assets/FlipBook.mp4" class="video" controls></video>
-            </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="redes">
-        <a href="https://www.instagram.com" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
+        </div>
+    </div>
+    </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="redes">
+      <a href="https://www.instagram.com" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
 
-        <a href="https://x.com" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
+      <a href="https://x.com" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
 
-        <a href="https://workspace.google.com/intl/es-419_ar/gmail/">
-          <i class="fas fa-envelope"></i>
-        </a>
+      <a href="https://workspace.google.com/intl/es-419_ar/gmail/">
+        <i class="fas fa-envelope"></i>
+      </a>
 
-        <a href="https://www.linkedin.com" target="_blank">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </div>
-      <p>© 2025 - Made by Mercedes Flores Levalle</p>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <a href="https://www.linkedin.com" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+    <p>© 2025 - Made by Mercedes Flores Levalle</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
