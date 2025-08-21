@@ -10,11 +10,10 @@ body {
   color: #000000;
 }
 
+
 h2,
 h3 {
   font-family: "Fraunces", serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 p {
@@ -54,6 +53,12 @@ a {
   border-radius: 50%;
   object-fit: cover;
 }
+
+.logo__nombre {
+font-family: "Fraunces", serif;
+font-weight: 400;
+font-size: 20px;
+}
 .nav-links {
   list-style: none;
 }
@@ -79,19 +84,19 @@ a {
   justify-content: center;
 }
 
-.presentacion {
+.main-home__presentacion {
   text-align: center;
   padding: 100px 20px;
   max-width: 800px;
 }
 
-.presentacion h1 {
+.main-home__presentacion h1 {
   font-size: 26px;
   margin-bottom: 15px;
   color: #2c2c2c;
 }
 
-.presentacion p {
+.main-home__presentacion p {
   font-size: 17px;
   margin-bottom: 20px;
   line-height: 1.5;
@@ -118,20 +123,20 @@ a {
   color: white;
 }
 
-.redes {
+.footer__redes {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-bottom: 10px;
 }
-.redes a {
+.footer__redes a {
   color: white;
   font-size: 24px;
   margin: 0 10px;
   transition: transform 0.3s ease;
 }
 
-.redes a i:hover {
+.footer__redes a i:hover {
   transform: scale(1.2);
   color: #ec9fb9;
 }
@@ -163,35 +168,35 @@ a {
   margin-bottom: 10px;
 }
 
-.ContenidoFormacion p {
+.grid__ContenidoFormacion p {
   margin: 0;
 }
 
 /* Caja de la imagen */
-.ImagenFormacion {
+.grid__ImagenFormacion {
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
   aspect-ratio: 16 / 9;
 }
 
-.ImagenFormacion img {
+.grid__ImagenFormacion img {
   width: 100%;
   height: 100%;
 }
 
-.carrousel_logos {
+.programas__carrousel-logos {
   overflow: hidden;
 }
 
-.logos {
+.programas__logos {
   display: flex;
   gap: 20px;
   flex-wrap: nowrap;
   animation: scroll 10s linear infinite;
 }
 
-.logos img {
+.programas__logos img {
   height: 80px;
   width: auto;
   object-fit: contain;
