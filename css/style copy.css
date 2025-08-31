@@ -20,7 +20,7 @@ p {
   font-family: "Manrope", sans-serif;
 }
 
-.TitulosPaginas {
+.titulosPaginas {
   font-family: "Fraunces", serif;
   margin-top: 12px;
   text-align: center;
@@ -90,11 +90,11 @@ font-size: 20px;
   max-width: 800px;
 }
 
-.main-home__presentacion h1 {
+/* .main-home__presentacion h2 {
   font-size: 26px;
   margin-bottom: 15px;
   color: #2c2c2c;
-}
+} */
 
 .main-home__presentacion p {
   font-size: 17px;
@@ -327,9 +327,7 @@ font-size: 20px;
     margin-bottom: 20px;
   }
   .contact-form__grid {
-    /* no entiendo porque no se aplica el responsive en 768 */
-
-    grid-template-columns: 1fr;
+grid-template-columns: 1fr;
   }
 }
 @media (max-width: 530px) {

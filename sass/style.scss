@@ -1,0 +1,325 @@
+//VARIABLES
+$colores: (
+  fondo-principal: #f8d7da,
+  fondo-secundario: #de5d83,
+  hover: #ec9fb9,
+);
+$fuentes: (
+  fuente-principal: "Manrope",
+  fuente-secundaria: "Fraunces",
+);
+
+//MIXINS
+@mixin flexible($dis, $just, $align) {
+  display: $dis;
+  justify-content: $just;
+  align-items: $align;
+}
+
+//EXTEND
+%btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: map-get($colores, fondo-secundario);
+  color: #fff;
+  &:hover {
+    background: map-get($colores, hover);
+  }
+}
+
+//EXTEND
+%btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: map-get($colores, "fondo-secundario");
+  color: #fff;
+  &:hover {
+    background-color: map-get($colores, "hover");
+  }
+}
+
+//ANIMACION (PAGINA SOBRE MI)
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% / 3));
+  }
+}
+
+//RESET
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//ESTILOS GENERALES
+body {
+  background-color: map-get($colores, "fondo-principal");
+  color: #000000;
+}
+
+h2,
+h3 {
+  font-family: map-get($fuentes, "fuente-secundaria"), serif;
+}
+
+p {
+  font-family: map-get($fuentes, "fuente-principal"), sans-serif;
+}
+
+.titulosPaginas {
+  font-family: map-get($fuentes, "fuente-secundaria"), serif;
+  margin-top: 12px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+.linea-estetica {
+  border: none;
+  height: 2px;
+  background-color: #f098d7;
+  width: 100%;
+}
+.video {
+  display: flex;
+  max-width: 800px;
+  border-radius: 10px;
+  margin: 20px 0 20px;
+  @media (max-width: 990px) {
+    max-width: 500px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 400px;
+  }
+  @media (max-width: 530px) {
+    max-width: 200px;
+  }
+}
+
+//HEADER
+.header {
+  background-color: map-get($colores, "fondo-secundario");
+  @include flexible(flex, space-between, center);
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    img {
+      height: 70px;
+      width: auto;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .logo__nombre {
+      font-family: map-get($fuentes, "fuente-secundaria"), serif;
+      font-weight: 400;
+      font-size: 20px;
+    }
+  }
+  div {
+    ul.nav-links {
+      list-style: none;
+      li.nav-item {
+        display: inline-block;
+        padding: 0 20px;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      a.nav-link {
+        color: white;
+        text-decoration: none;
+        &:hover {
+          color: map-get($colores, "hover");
+        }
+      }
+    }
+  }
+}
+
+//INDEX
+main.main-home {
+  height: 82vh;
+  @include flexible(flex, center, center);
+  div.main-home__presentacion {
+    text-align: center;
+    padding: 100px 20px;
+    max-width: 800px;
+    p {
+      font-size: 17px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+      color: #555;
+    }
+    .boton-proyectosYcontacto {
+      @extend %btn;
+    }
+  }
+}
+
+//FOOTER
+footer.footer {
+  background-color: map-get($colores, "fondo-secundario");
+  padding: 20px;
+  text-align: center;
+  color: white;
+  div.footer__redes {
+    @include flexible(flex, center, center);
+    gap: 10px;
+    margin-bottom: 10px;
+    a {
+      color: white;
+      font-size: 24px;
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.2);
+        color: map-get($colores, "hover");
+      }
+    }
+  }
+}
+
+//SOBRE MI
+main.container {
+  div.sobremi__intro {
+    @include flexible(flex, center, center);
+    gap: 2rem;
+    padding: 2rem 12rem;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+    img.sobremi__img {
+      width: 200px;
+      border-radius: 10px;
+    }
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 28px;
+    align-items: start;
+    max-width: 1080px;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, auto);
+      margin-bottom: 15px;
+    }
+    h2 {
+      grid-column: 1 / -1;
+      margin-bottom: 10px;
+    }
+    .grid__ContenidoFormacion {
+      margin: 0;
+    }
+    .grid__ImagenFormacion {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  section.programas {
+    .programas__carrousel-logos {
+      overflow: hidden;
+      .programas__logos {
+        display: flex;
+        gap: 20px;
+        flex-wrap: nowrap;
+        animation: scroll 10s linear infinite;
+        img {
+          height: 80px;
+          width: auto;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  section.habilidades {
+    .boton-proyectosYcontacto {
+      @extend %btn;
+    }
+  }
+}
+
+//CINETICO
+main.container {
+  .cinetico__intro {
+    text-align: center;
+  }
+}
+
+//ANIMACION 2D
+section.animacion-2d {
+  .logo_herramientas {
+    width: 60px;
+  }
+}
+
+//CONTACTO
+section.contact-form {
+  background: #f8c8d8;
+  border: 1px solid #e9e4ea;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+  .contact-form__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap, 1.25rem);
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+    label {
+      display: block;
+      color: #de5d83;
+      font-weight: 500;
+      margin-bottom: 5px;
+      font-family: "Fraunces", serif;
+    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px 10px;
+      border: 1px solid #ec86a5;
+      border-radius: 10px;
+      font: inherit;
+      background: #ffffff;
+      font-family: map-get($fuentes, "fuente-secundaria"), serif;
+      &:required:invalid {
+        border-color: #ed6f63;
+      }
+      &:required:valid {
+        border-color: #aff7c4;
+      }
+    }
+    .contact-form__boton {
+      border: none;
+      width: 30%;
+      border-radius: 10px;
+      padding: 10px 0;
+      font-weight: 500;
+      cursor: pointer;
+      background: map-get($colores, "fondo-secundario");
+      color: #ffffff;
+      box-shadow: 0 6px 16px rgba(255, 102, 165, 0.35);
+      &:hover {
+        background: map-get($colores, "hover");
+      }
+    }
+  }
+}
