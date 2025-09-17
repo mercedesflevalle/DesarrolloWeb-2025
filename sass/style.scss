@@ -189,10 +189,14 @@ main.container {
     padding: 2rem 12rem;
     @media (max-width: 768px) {
       flex-wrap: wrap;
+      padding: 1rem 2rem;
+      text-align: center;
     }
     img.sobremi__img {
       width: 200px;
       border-radius: 10px;
+      max-width: 100%;
+      height: auto;
     }
   }
   div.netlify {

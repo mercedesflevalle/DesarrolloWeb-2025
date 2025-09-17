@@ -172,11 +172,15 @@ main.container div.sobremi__intro {
 @media (max-width: 768px) {
   main.container div.sobremi__intro {
     flex-wrap: wrap;
+    padding: 1rem 2rem;
+    text-align: center;
   }
 }
 main.container div.sobremi__intro img.sobremi__img {
   width: 200px;
   border-radius: 10px;
+  max-width: 100%;
+  height: auto;
 }
 main.container div.netlify {
   text-align: center;
