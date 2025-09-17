@@ -22,19 +22,6 @@ $fuentes: (
   padding: 10px 20px;
   border-radius: 4px;
   text-decoration: none;
-  background-color: map-get($colores, fondo-secundario);
-  color: #fff;
-  &:hover {
-    background: map-get($colores, hover);
-  }
-}
-
-//EXTEND
-%btn {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 4px;
-  text-decoration: none;
   background-color: map-get($colores, "fondo-secundario");
   color: #fff;
   &:hover {
@@ -206,6 +193,12 @@ main.container {
       width: 200px;
       border-radius: 10px;
     }
+  }
+  div.netlify {
+    text-align: center;
+    .btn-netlify {
+      @extend %btn;
+      }
   }
   .grid {
     display: grid;

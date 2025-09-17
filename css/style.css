@@ -1,4 +1,4 @@
-main.container section.habilidades .boton-proyectosYcontacto, main.main-home div.main-home__presentacion .boton-proyectosYcontacto {
+main.container section.habilidades .boton-proyectosYcontacto, main.container div.netlify .btn-netlify, main.main-home div.main-home__presentacion .boton-proyectosYcontacto {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 4px;
@@ -6,19 +6,7 @@ main.container section.habilidades .boton-proyectosYcontacto, main.main-home div
   background-color: #de5d83;
   color: #fff;
 }
-main.container section.habilidades .boton-proyectosYcontacto:hover, main.main-home div.main-home__presentacion .boton-proyectosYcontacto:hover {
-  background: #ec9fb9;
-}
-
-main.container section.habilidades .boton-proyectosYcontacto, main.main-home div.main-home__presentacion .boton-proyectosYcontacto {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 4px;
-  text-decoration: none;
-  background-color: #de5d83;
-  color: #fff;
-}
-main.container section.habilidades .boton-proyectosYcontacto:hover, main.main-home div.main-home__presentacion .boton-proyectosYcontacto:hover {
+main.container section.habilidades .boton-proyectosYcontacto:hover, main.container div.netlify .btn-netlify:hover, main.main-home div.main-home__presentacion .boton-proyectosYcontacto:hover {
   background-color: #ec9fb9;
 }
 
@@ -188,6 +176,9 @@ main.container div.sobremi__intro {
 main.container div.sobremi__intro img.sobremi__img {
   width: 200px;
   border-radius: 10px;
+}
+main.container div.netlify {
+  text-align: center;
 }
 main.container .grid {
   display: grid;
