@@ -227,8 +227,10 @@ main.container {
       margin: 0;
     }
     .grid__ImagenFormacion {
+      img {
       width: 100%;
       height: 100%;
+      }
     }
   }
   section.programas {
