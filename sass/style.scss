@@ -109,6 +109,7 @@ a {
       width: auto;
       border-radius: 50%;
       object-fit: cover;
+      padding: 5px;
     }
     .logo__nombre {
       font-family: map-get($fuentes, "fuente-secundaria"), serif;

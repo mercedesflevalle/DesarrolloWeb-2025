@@ -96,6 +96,7 @@ a {
   width: auto;
   border-radius: 50%;
   object-fit: cover;
+  padding: 5px;
 }
 .header .logo .logo__nombre {
   font-family: "Fraunces", serif;
